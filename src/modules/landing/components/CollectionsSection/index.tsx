@@ -1,5 +1,6 @@
 import type { PreviousCollection } from "../../constants";
 import "./style.css";
+import { Reveal } from "../Reveal";
 
 type CollectionsSectionProps = {
   collections: PreviousCollection[];
@@ -13,7 +14,7 @@ export function CollectionsSection({
   return (
     <section className="section" id="colecoes" aria-labelledby="colecoes-title">
       <div className="container">
-        <header className="section__header">
+        <Reveal as="header" className="section__header" direction="up">
           <p className="section__eyebrow">Coleções anteriores</p>
           <h2 id="colecoes-title">
             Cada coleção nasce de uma devoção e conversa com a vida real.
@@ -23,10 +24,16 @@ export function CollectionsSection({
             Cristo para as ruas. Entre em contato para saber sobre novas
             reposições e tamanhos disponíveis.
           </p>
-        </header>
+        </Reveal>
         <div className="collection-grid">
-          {collections.map((collection) => (
-            <article className="collection-card" key={collection.name}>
+          {collections.map((collection, index) => (
+            <Reveal
+              key={collection.name}
+              as="article"
+              className="collection-card"
+              direction={index % 2 === 0 ? "up" : "right"}
+              delay={80 * index}
+            >
               <div className="collection-card__media">
                 <img
                   src={collection.image}
@@ -52,7 +59,7 @@ export function CollectionsSection({
                   Quero esse modelo
                 </a>
               </div>
-            </article>
+            </Reveal>
           ))}
         </div>
       </div>

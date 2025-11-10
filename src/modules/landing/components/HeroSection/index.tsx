@@ -1,5 +1,6 @@
 import type { FeaturedRelease } from "../../constants";
 import "./style.css";
+import { Reveal } from "../Reveal";
 
 type HeroSectionProps = {
   featuredRelease: FeaturedRelease;
@@ -13,7 +14,7 @@ export function HeroSection({
   return (
     <header className="hero">
       <div className="container">
-        <nav className="hero__nav" aria-label="Principal">
+        <Reveal as="nav" className="hero__nav" aria-label="Principal">
           <div className="hero__brand">
             <img
               className="hero__brand-logo"
@@ -37,10 +38,10 @@ export function HeroSection({
           >
             Falar no WhatsApp
           </a>
-        </nav>
+        </Reveal>
 
         <div className="hero__content">
-          <div className="hero__copy">
+          <Reveal className="hero__copy" direction="up" delay={80}>
             <p className="hero__eyebrow">Nova camiseta disponível</p>
             <h1>
               Vista histórias que inspiram fé e despertam conversas com Deus.
@@ -52,7 +53,7 @@ export function HeroSection({
             </p>
             <div className="hero__actions">
               <a className="button button--primary" href="#lancamento">
-                Ver coleção Sementes de Fé
+                Ver nova camiseta
               </a>
               <a
                 className="button button--secondary"
@@ -63,9 +64,15 @@ export function HeroSection({
                 Pedir pelo WhatsApp
               </a>
             </div>
-          </div>
+          </Reveal>
 
-          <article className="hero__release-card" id="lancamento">
+          <Reveal
+            as="article"
+            className="hero__release-card"
+            id="lancamento"
+            direction="right"
+            delay={150}
+          >
             <div className="hero__release-header">
               <span className="hero__release-tag">
                 {featuredRelease.release}
@@ -91,7 +98,7 @@ export function HeroSection({
             >
               Garantir minha camiseta
             </a>
-          </article>
+          </Reveal>
         </div>
       </div>
     </header>

@@ -1,4 +1,5 @@
 import "./style.css";
+import { Reveal } from "../Reveal";
 
 type CallToActionSectionProps = {
   whatsappLink: string;
@@ -10,7 +11,7 @@ export function CallToActionSection({
   return (
     <section className="cta" aria-labelledby="cta-title">
       <div className="container cta__container">
-        <div className="cta__content">
+        <Reveal className="cta__content" direction="left">
           <p className="cta__eyebrow">Pronto para vestir a missão?</p>
           <h2 id="cta-title">Vamos desenhar a próxima história juntos.</h2>
           <p>
@@ -18,15 +19,17 @@ export function CallToActionSection({
             lançamento e descubra possibilidades exclusivas para grupos,
             comunidades e eventos.
           </p>
-        </div>
-        <a
+        </Reveal>
+        <Reveal as="a"
           className="button button--contrast"
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
+          direction="right"
+          delay={120}
         >
           Conversar no WhatsApp
-        </a>
+        </Reveal>
       </div>
     </section>
   );

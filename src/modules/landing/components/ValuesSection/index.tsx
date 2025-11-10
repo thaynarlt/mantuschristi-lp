@@ -1,5 +1,6 @@
 import type { ValuePoint } from "../../constants";
 import "./style.css";
+import { Reveal } from "../Reveal";
 
 type ValuesSectionProps = {
   values: ValuePoint[];
@@ -10,7 +11,7 @@ export function ValuesSection({ values }: ValuesSectionProps) {
     <section className="section" aria-labelledby="valores-title">
       <div className="container">
         <div className="values">
-          <header className="values__intro">
+          <Reveal className="values__intro" as="header" direction="left">
             <p className="section__eyebrow">Nosso compromisso</p>
             <h2 id="valores-title">
               Moda que honra a fé com autenticidade, beleza e propósito.
@@ -19,13 +20,19 @@ export function ValuesSection({ values }: ValuesSectionProps) {
               Cada detalhe é pensado para transmitir a mensagem com reverência e
               excelência, do design ao atendimento.
             </p>
-          </header>
+          </Reveal>
           <div className="values__list">
-            {values.map((value) => (
-              <article className="values-card" key={value.title}>
+            {values.map((value, index) => (
+              <Reveal
+                key={value.title}
+                as="article"
+                className="values-card"
+                direction="up"
+                delay={80 * index}
+              >
                 <h3>{value.title}</h3>
                 <p>{value.description}</p>
-              </article>
+              </Reveal>
             ))}
           </div>
         </div>
