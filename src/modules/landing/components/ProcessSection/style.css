@@ -1,0 +1,36 @@
+.process-grid {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.process-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(190, 192, 146, 0.35);
+  box-shadow: 0 22px 40px -30px rgba(84, 88, 47, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.process-card__index {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  color: var(--color-tertiary);
+  text-transform: uppercase;
+}
+
+.process-card h3 {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 640px) {
+  .process-card {
+    padding: 1.5rem;
+  }
+}
+

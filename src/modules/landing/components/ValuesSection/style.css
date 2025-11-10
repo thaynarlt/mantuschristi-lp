@@ -1,0 +1,41 @@
+.values {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+}
+
+.values__intro {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.values__list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.values-card {
+  background: rgba(84, 88, 47, 0.08);
+  border: 1px solid rgba(84, 88, 47, 0.18);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  box-shadow: 0 18px 25px -24px rgba(84, 88, 47, 0.55);
+}
+
+@media (max-width: 820px) {
+  .values {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .values-card {
+    padding: 1.5rem;
+  }
+}
+
