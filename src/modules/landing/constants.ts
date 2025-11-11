@@ -42,10 +42,10 @@ export const featuredRelease: FeaturedRelease = {
 
 export const previousCollections: PreviousCollection[] = [
   {
-    name: "Sementes que Evangelizam",
+    name: "Se Ninguém Te Adorar, Eu Vou",
     theme: "Lançamento Julho",
     description:
-      "Mensagens que brotam no cotidiano e geram testemunho: uma coleção pensada para quem vive a missão no dia a dia.",
+      "Inspirada na música da Colo de Deus: 'Se Ninguém Te Adorar, Eu Vou'.",
     image: "/produtos/sntev.jpg",
     availability: "Disponível apenas na cor original da coleção.",
   },

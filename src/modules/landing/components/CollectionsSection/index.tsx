@@ -30,14 +30,8 @@ export function CollectionsSection({
           </p>
         </Reveal>
         <div className="collection-grid">
-          {collections.map((collection, index) => (
-            <Reveal
-              key={collection.name}
-              as="article"
-              className="collection-card"
-              direction={index % 2 === 0 ? "up" : "right"}
-              delay={80 * index}
-            >
+          {collections.map((collection) => (
+            <article className="collection-card" key={collection.name}>
               <div className="collection-card__media">
                 <img
                   src={collection.image}
@@ -63,7 +57,7 @@ export function CollectionsSection({
                   Quero esse modelo
                 </a>
               </div>
-            </Reveal>
+            </article>
           ))}
         </div>
       </div>

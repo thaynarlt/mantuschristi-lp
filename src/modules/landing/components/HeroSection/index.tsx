@@ -68,7 +68,7 @@ export function HeroSection({
         </Reveal>
 
         <div className="hero__content">
-          <Reveal className="hero__copy" direction="up" delay={80}>
+          <Reveal className="hero__copy" direction="up">
             <p className="hero__eyebrow">Nova camiseta disponível</p>
             <h1>
               Vista histórias que inspiram fé e despertam conversas com Deus.
@@ -98,7 +98,6 @@ export function HeroSection({
             className="hero__release-card"
             id="lancamento"
             direction="right"
-            delay={150}
           >
             <div className="hero__release-header">
               <span className="hero__release-tag">
