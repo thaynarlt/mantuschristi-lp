@@ -14,7 +14,11 @@ export function CollectionsSection({
   return (
     <section className="section" id="colecoes" aria-labelledby="colecoes-title">
       <div className="container">
-        <Reveal as="header" className="section__header" direction="up">
+        <Reveal
+          as="header"
+          className="section__header section__header--center"
+          direction="up"
+        >
           <p className="section__eyebrow">Coleções anteriores</p>
           <h2 id="colecoes-title">
             Cada coleção nasce de uma devoção e conversa com a vida real.

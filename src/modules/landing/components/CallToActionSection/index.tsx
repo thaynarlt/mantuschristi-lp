@@ -21,7 +21,7 @@ export function CallToActionSection({
           </p>
         </Reveal>
         <Reveal as="a"
-          className="button button--contrast"
+          className="button button--secondary"
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"

@@ -1,5 +1,5 @@
 export const WHATSAPP_LINK = "https://wa.me/5500000000000";
-export const GOOGLE_FORM_LINK = "https://forms.gle/SEU_FORMULARIO";
+export const GOOGLE_FORM_LINK = "https://forms.gle/B6E56U3aJ9qihbwe7";
 
 export type FeaturedRelease = {
   name: string;
@@ -29,11 +29,11 @@ export type ValuePoint = {
 
 export const featuredRelease: FeaturedRelease = {
   name: "Camiseta São Pier Giorgio Frassati",
-  release: "Lançamento Novembro · Edição Limitada",
+  release: "Lançamento Dezembro · Edição Limitada",
   description:
-    "A camiseta São Pier Giorgio Frassati é uma homenagem ao santo italiano, que foi um jovem católico que morreu em 1925, aos 24 anos, em um acidente de carro. Ele foi um dos primeiros santos jovens do século XX.",
+    "Homenagem a São Pier Giorgio Frassati, jovem que viveu a fé com ousadia e caridade nas ruas da Itália.",
   highlights: [
-    "Arte autoral produzida em parceria com artistas católicos",
+    "Arte autoral produzida por nossa equipe",
     "Tecido premium 30.1 penteado · 100% algodão com toque suave",
     "Disponível em cor exclusiva da coleção · Modelagem unissex",
   ],
@@ -43,7 +43,7 @@ export const featuredRelease: FeaturedRelease = {
 export const previousCollections: PreviousCollection[] = [
   {
     name: "Sementes que Evangelizam",
-    theme: "Catequese em movimento",
+    theme: "Lançamento Julho",
     description:
       "Mensagens que brotam no cotidiano e geram testemunho: uma coleção pensada para quem vive a missão no dia a dia.",
     image: "/produtos/sntev.jpg",
@@ -51,7 +51,7 @@ export const previousCollections: PreviousCollection[] = [
   },
   {
     name: "Nossa Senhora de Fátima",
-    theme: "Consolo e esperança",
+    theme: "Lançamento Julho",
     description:
       "Cores suaves e traços delicados para lembrar o cuidado de Maria em cada detalhe da caminhada.",
     image: "/produtos/nsf.jpg",
@@ -61,19 +61,24 @@ export const previousCollections: PreviousCollection[] = [
 
 export const processSteps: ProcessStep[] = [
   {
-    title: "Janela de pedidos",
+    title: "Lançamento do mês",
     description:
-      "Abrimos um período determinado para você garantir o último lançamento.",
+      "Todo começo de mês apresentamos o modelo exclusivo daquela coleção e abrimos as vendas.",
   },
   {
-    title: "Faça o pedido no WhatsApp",
+    title: "Pedidos por 7 dias",
     description:
-      "Entre no nosso WhatsApp, informe seus dados, endereço e tamanho desejado.",
+      "Você tem uma semana para garantir o seu pedido — tudo acontece pelo nosso WhatsApp.",
   },
   {
-    title: "Prazo e entrega combinados",
+    title: "Produção em 20 dias",
     description:
-      "Nossa equipe informa o tempo de confecção e combina com você a melhor forma de entrega.",
+      "Confeccionamos com carinho nessas três semanas; quando o pedido fica pronto, combinamos a entrega.",
+  },
+  {
+    title: "Portfólio vivo",
+    description:
+      "Quer um modelo antigo? Preencha o formulário de interesse para avaliarmos um relançamento.",
   },
 ];
 
@@ -94,4 +99,3 @@ export const valuePoints: ValuePoint[] = [
       "Proximidade para entender o que você precisa, enviar sugestões e acompanhar o pedido até chegar.",
   },
 ];
-

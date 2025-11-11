@@ -11,6 +11,7 @@ import { CollectionsSection } from "../modules/landing/components/CollectionsSec
 import { FooterSection } from "../modules/landing/components/FooterSection";
 import { HeroSection } from "../modules/landing/components/HeroSection";
 import { ProcessSection } from "../modules/landing/components/ProcessSection";
+import { ProjectsSection } from "../modules/landing/components/ProjectsSection";
 import { ValuesSection } from "../modules/landing/components/ValuesSection";
 import "../modules/landing/styles/base.css";
 
@@ -26,6 +27,7 @@ export function LandingPage() {
           collections={previousCollections}
           formLink={GOOGLE_FORM_LINK}
         />
+        <ProjectsSection />
         <ProcessSection steps={processSteps} />
         <ValuesSection values={valuePoints} />
         <CallToActionSection whatsappLink={WHATSAPP_LINK} />

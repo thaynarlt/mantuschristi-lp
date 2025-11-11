@@ -22,8 +22,9 @@ export function ProcessSection({ steps }: ProcessSectionProps) {
           <p className="section__eyebrow">Como funciona</p>
           <h2 id="process-title">Um caminho simples, guiado pelo cuidado.</h2>
           <p className="section__description">
-            Abrimos ciclos de pedidos, recebemos tudo pelo WhatsApp e te mantemos
-            por dentro dos prazos até combinar a entrega perfeita.
+            Todo mês lançamos uma coleção exclusiva: abrimos pedidos por uma
+            semana, produzimos em 20 dias e combinamos a entrega quando tudo
+            estiver pronto — enquanto já preparamos o próximo lançamento.
           </p>
         </Reveal>
         <div className="process-grid">
