@@ -60,6 +60,15 @@
 }
 
 @media (max-width: 640px) {
+  .collection-grid {
+    padding-inline: 0.5rem;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .collection-card {
+    border-radius: var(--radius-md);
+  }
+
   .collection-card__content {
     padding: 1.5rem;
   }

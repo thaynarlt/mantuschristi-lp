@@ -330,6 +330,10 @@
     flex-direction: column;
   }
 
+  .hero__release-list {
+    display: none;
+  }
+
   .hero__release-header {
     order: 0;
   }

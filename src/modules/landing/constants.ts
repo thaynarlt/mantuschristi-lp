@@ -1,4 +1,4 @@
-export const WHATSAPP_LINK = "https://wa.me/5500000000000";
+export const WHATSAPP_LINK = "https://wa.me/message/VB4RVGV243KWJ1";
 export const GOOGLE_FORM_LINK = "https://forms.gle/B6E56U3aJ9qihbwe7";
 
 export type FeaturedRelease = {
